@@ -18,7 +18,7 @@ class taosUtil(object):
     def execute(self, sql):
         self.cursor.execute(sql)
 
-    def inesrt_mseed_data(self, trace: obspy.core.trace):
+    def inesrt_mseed_data(self, trace):
         # 获取设备信息 台网名、台站名、位置号、通道号
         net = trace.stats.network
         sta = trace.stats.station
